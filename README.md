@@ -1,13 +1,9 @@
-# envrc
 source_up
-
 [[ -f .secrets ]] && source .secrets
 [[ -f .local_overrides ]] && source .local_overrides
-
 TF_VAR_region='eu-west-1'
 TF_VAR_access_key=$AWS_ACCESS_KEY_ID
 TF_VAR_secret_key=$AWS_SECRET_ACCESS_KEY
-
 export TF_VAR_region
 export TF_VAR_sshpubkey_file
 export TF_VAR_access_key
